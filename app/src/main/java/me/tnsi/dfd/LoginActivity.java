@@ -34,10 +34,15 @@ public class LoginActivity extends AppCompatActivity {
     private OnClickListener onClickListener = new OnClickListener() {
         @Override
         public void onClick(final View v) {
-            Intent intent = new Intent(LoginActivity.this, MapActivity.class);
+            Intent intent = new Intent(LoginActivity.this, MapActivity2.class);
             LoginActivity.this.startActivity(intent);
         }
     };
+
+    @Override
+    public void onBackPressed() {
+        // nothing happens here, nothing
+    }
 
 
 }
